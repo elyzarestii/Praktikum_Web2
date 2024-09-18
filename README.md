@@ -204,4 +204,81 @@ Berikut langkah-langkah dari pembuatan class :
 # Hasil Output
 <img width="471" alt="WEBJB2" src="https://github.com/user-attachments/assets/82e849b9-cf17-43fe-adc9-4c7c3aae1174">
 
+## Tugas Dokumentasi Jobsheet 3
+# Jobsheet3
+1. Class (Person)
+   Class juga terdapat seperti :
+   A. Atribut : kelas memiliki satu atribut yang bernama $name yang sifatnya protected yaitu bisa diakses oleh kelas turunan.
+   B. Konstruktor : Konstruktor menerima paramenter $name untuk menganalisis atribut tersebut.
+   C. Metode(getName) : Mengembalikan nilai dari atribut ke $name.
+2. Class (Student)
+  Ini juga terdapat seperti :
+   A. Pewaris : Kelas Student mewarisi dari kelas person, sehingga   dapat menggunakan atribut dan metode dari person.
+   B. Atribut : Memiliki atribut tambahan seperti $studentID.
+   C. Konstruktor : Yang menerima dua paramenter, $name dan         $studentID, dan memanggil konstruktor kelas induk untuk             menginisialisasi $name.
+   D. Metode getName() : Mengoverride metode dari kelas person,      menambahkan teks "Nama Siswa" sebelum mengembalikan nama.
+   E. Metode getStudentID() :  Mengembalikan ID siswa.
+   F. Metode setName() dan setStudentID() : Mengatur nilai untuk     atribut $name dan $studentID.
+3. class(Teacher)
+   Terdapat seperti :
+   A. Pewarisan: Kelas Teacher juga mewarisi dari kelas Person.
+   B. Atribut: Memiliki atribut $teacherID.
+   C.Konstruktor: Menerima dua parameter, $name dan $teacherID, serta memanggil konstruktor kelas induk.
+   D.Metode getName(): Mengoverride metode dari kelas Person, menambahkan teks "Nama Guru:" sebelum mengembalikan nama.
+   F.Metode getTeacherID(): Mengembalikan ID guru.
+4. class abstrak(course)
+   Terdapat seperti :
+   A. Kelas Course adalah kelas abstrak yang tidak dapat diinstansiasi.
+   B.Memiliki metode abstrak getCourseDetails(), yang harus diimplementasikan oleh kelas turunan.
+5. class onlinecourse dan offlinecourse
+   Terdapat Seperti :
+    A.  Kelas onlineCourse dan offlineCourse mengimplementasikan metode getCourseDetails() dari kelas abstrak Course.
+   B. Masing-masing mengembalikan string yang berbeda.
+6. Implementasi
+   Terdapat seperti :
+   A. Instansiasi Objek: Membuat objek Student dan Teacher, mengisi nama dan ID masing-masing.
+   B. Menggunakan Metode:
+         Memanggil getName() untuk menampilkan nama siswa dan guru.
+         Memanggil getStudentID() dan getTeacherID() untuk menampilkan ID.
+         Membuat objek onlineCourse dan offlineCourse, lalu                  memanggil getCourseDetails() untuk menampilkan jenis kursus.
+
+   ## Tugas JObsheet3
+1. Class (person)
+   Atribut: Kelas Person memiliki atribut privat protected $name, yang dapat diakses oleh kelas turunan.
+Konstruktor: Konstruktor menerima parameter $name untuk menginisialisasi atribut.
+Metode getName(): Mengembalikan nilai dari atribut $name.
+Metode getRole(): Mengembalikan string "Person", yang menunjukkan peran umum.
+2. Class(dosen)
+   Pewarisan: Kelas Dosen mewarisi dari kelas Person.
+Atribut: Memiliki atribut privat $nidn untuk menyimpan Nomor Induk Dosen Nasional.
+Konstruktor: Menerima dua parameter, $name dan $nidn, dan memanggil konstruktor kelas induk untuk menginisialisasi nama.
+Metode getNIDN(): Mengembalikan nilai dari atribut $nidn.
+Metode getRole(): Mengoverride metode dari kelas Person, mengembalikan string "Dosen".
+3. Class mahasiswa
+   Pewarisan: Kelas Mahasiswa juga mewarisi dari kelas Person.
+Atribut: Memiliki atribut privat $nim untuk menyimpan Nomor Induk Mahasiswa.
+Konstruktor: Menerima dua parameter, $name dan $nim, dan memanggil konstruktor kelas induk.
+Metode getNIM(): Mengembalikan nilai dari atribut $nim.
+Metode getRole(): Mengoverride metode dari kelas Person, mengembalikan string "Mahasiswa".
+4. class abstrak (jurnal)
+   Kelas Jurnal adalah kelas abstrak yang tidak dapat diinstansiasi secara langsung.
+Memiliki metode abstrak pengajuanJurnal(), yang harus diimplementasikan oleh kelas turunan.
+5. class(jurnal dosen)
+   Kelas JurnalDosen mengimplementasikan metode pengajuanJurnal() dari kelas abstrak Jurnal, dan mengembalikan string "Pengajuan jurnal oleh Dosen."
+6. class (jurnal mahasiswa)
+   Kelas JurnalMahasiswa juga mengimplementasikan metode pengajuanJurnal() dari kelas abstrak Jurnal, dan mengembalikan string "Pengajuan jurnal oleh Mahasiswa."
+7. fungsi (displayinfo)
+   Instansiasi Objek: Membuat objek Dosen dan Mahasiswa dengan nama dan ID masing-masing.
+Menampilkan Informasi:
+Memanggil metode getName(), getRole(), dan getNIDN() untuk dosen.
+Memanggil metode getName(), getRole(), dan getNIM() untuk mahasiswa.
+Instansiasi Jurnal: Membuat objek dari JurnalDosen dan JurnalMahasiswa, lalu memanggil pengajuanJurnal() untuk menampilkan pesan yang sesuai.
+8. memanggil fungsi
+   Memanggil fungsi displayInfo() untuk menjalankan semua logika di atas dan menampilkan informasi di browser.
+
+## output jobsheet3
+<img width="464" alt="jb3" src="https://github.com/user-attachments/assets/5a2f4496-30aa-4e53-ac4f-168ed3877438">
+
+## output tugas jobsheet3
+<img width="467" alt="tugas3" src="https://github.com/user-attachments/assets/3f8563de-dd83-4585-abb3-8a4442c52b55">
 
